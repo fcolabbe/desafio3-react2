@@ -38,4 +38,4 @@ La aplicación consta de tres vistas principales:
 
 ## Créditos
 
-Este proyecto fue desarrollado como parte del Bootcamp Full Stack de Desafío Latam por Francisco Labbe.
+Este proyecto fue desarrollado como parte del Bootcamp Full Stack de Desafío Latam por [Francisco Labbe](https://www.linkedin.com/in/fcolabbe/).
