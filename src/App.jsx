@@ -32,7 +32,7 @@ function App() {
   }
 
     const sharedData = { pokemon, setPokemon, Poke_API }
-    console.log(pokemon)
+/*     console.log(pokemon) */
     return (
       <>
         <MiContexto.Provider value={sharedData}>

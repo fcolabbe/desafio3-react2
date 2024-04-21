@@ -27,8 +27,8 @@ const Pokemones = () => {
     }
 
 /* console.log(poke.other.home["front_default"]) */
-console.log(poke?.other?.home?.front_default)
-console.log(stats)
+/* console.log(poke?.other?.home?.front_default)
+console.log(stats) */
     return (
         <div className="tarjeta">
         <main>
