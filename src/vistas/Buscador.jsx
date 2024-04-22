@@ -8,8 +8,6 @@ const Buscador = () => {
     const navigate = useNavigate()
     let arr = new Array();
     const verPokemon = (e) => {
-/*         console.log(pokemonSeleccionado)
-        console.log(pokemon) */
         if(arr.includes(pokemonSeleccionado)){
         navigate(`/pokemones/${pokemonSeleccionado}`)
         }else{
