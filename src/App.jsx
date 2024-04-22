@@ -41,6 +41,7 @@ function App() {
           <Route path="/" element={<Inicio />}></Route>
           <Route path="/pokemones/:name" element={<Pokemones />}></Route>
           <Route path="/pokemones" element={<Buscador />}></Route>
+          <Route path="/pokemones/*" element={<NotFound />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
         </MiContexto.Provider>

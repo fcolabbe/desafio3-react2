@@ -6,9 +6,15 @@ const Buscador = () => {
     const {pokemon} = useContext(MiContexto)
     const [pokemonSeleccionado, setPokemonSeleccionado] = useState('')
     const navigate = useNavigate()
+    let arr = new Array();
     const verPokemon = (e) => {
-        console.log(pokemonSeleccionado)
+/*         console.log(pokemonSeleccionado)
+        console.log(pokemon) */
+        if(arr.includes(pokemonSeleccionado)){
         navigate(`/pokemones/${pokemonSeleccionado}`)
+        }else{
+            navigate('/not-found')
+        }
     }
     const handleChange = (e) => {
         setPokemonSeleccionado(e.target.value)
@@ -20,6 +26,7 @@ const Buscador = () => {
         { <select onChange={handleChange} name="pokemon" className='form-select form-select-lg mb-3" aria-label=".form-select-lg example'>
             <option value="">Selecciona un Pokemon</option>
             {pokemon.map((pokemon) => (
+                arr.push(pokemon.name),
                 <option key={pokemon.url} value={pokemon.name}>{pokemon.name}</option>
             ))}
         </select> }

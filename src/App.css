@@ -22,6 +22,12 @@
   padding-right: 10px;
 }
 
+.link-inactivo {
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .tarjeta {
   display: flex;
   justify-content: center;

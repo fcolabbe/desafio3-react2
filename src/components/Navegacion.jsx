@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 
 const Navegacion = () => {
-    const setActiveClass = ({ isActive }) => (isActive ? "link-activo" : "text-white text-decoration-none");
+    const setActiveClass = ({ isActive }) => (isActive ? "link-activo" : "link-inactivo");
     return (
         <Navbar bg="dark" variant="dark">
             <Container className="d-flex justify-content-between">
