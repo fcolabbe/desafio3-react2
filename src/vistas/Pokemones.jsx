@@ -7,6 +7,7 @@ const Pokemones = () => {
     const { name } = useParams();
     const [poke, setPoke] = useState([])
     const [stats, setStats] = useState([])
+    const [tipo, setTipo] = useState([])
 
     useEffect(() => {
         fetchPokemon()
@@ -21,14 +22,15 @@ const Pokemones = () => {
             const data = await response.json()
             setStats(data.stats)
             setPoke(data.sprites)
+            setTipo(data.types)
         } catch (error) {
             console.error('Error en la petición', error);
         }
     }
 
 /* console.log(poke.other.home["front_default"]) */
-/* console.log(poke?.other?.home?.front_default)
-console.log(stats) */
+console.log(poke?.other?.home?.front_default)
+console.log(stats)
     return (
         <div className="tarjeta">
         <main>
@@ -40,6 +42,12 @@ console.log(stats) */
                 <ul>
                     {stats.map((stat) => (
                         <li key={stat.stat.name}>{stat.stat.name}: {stat.base_stat}</li>
+                    ))}
+                </ul>
+                <h3>Tipo</h3>
+                <ul>
+                    {tipo.map((type) => (
+                        <li key={type.type.name}>{type.type.name}</li>
                     ))}
                 </ul>
             </div>
