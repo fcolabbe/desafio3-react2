@@ -63,4 +63,8 @@ main {
     width: 150px;
     height: 150px;
   }
+  #notfound{
+    width: 400px;
+  }
 }
+
